@@ -28,3 +28,48 @@ user.age="21"
 
 //lock values
 Object.freeze(user)
+
+
+//singleton object
+
+//const appUser = new Object()  //singleton object
+//const appUser={}      //nonsingleton
+
+
+
+//creating objects in objects
+const appUser2={
+    name: "priyanka",
+    Id: 23009 ,
+    emails : {
+        insta:"pvlogs@gmail.com", 
+        eduEmail: {
+            yt:"priyanka@gmail.com ",
+            linkden: "piya@gmail.com"
+        }
+    }
+
+}
+//console.log(appUser2.emails);
+//console.log(appUser2.emails.eduEmail.linkden);
+
+
+
+
+    //merging objects
+const obj1= {
+    1:"p",
+    2:"k"
+}
+const obj2= {
+    3:"p",
+    4:"k"
+}
+const obj3= {
+    5:"p",
+    6:"k"
+}
+
+//const obj4 = Object.assign({}, obj1,obj2,obj3);    //method 1 to call
+const obj4 = {...obj1,...obj2,...obj3};              //method 2
+console.log(obj4)
