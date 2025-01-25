@@ -71,5 +71,18 @@ const obj3= {
 }
 
 //const obj4 = Object.assign({}, obj1,obj2,obj3);    //method 1 to call
-const obj4 = {...obj1,...obj2,...obj3};              //method 2
-console.log(obj4)
+//const obj4 = {...obj1,...obj2,...obj3};              //method 2
+//console.log(obj4)
+
+
+
+
+   //destrusturing
+const course={
+    name:"priyanka",
+    courseName:"javascript"
+}
+
+const {courseName:name}=course
+//console.log(name);
+    
