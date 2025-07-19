@@ -42,6 +42,25 @@
 
 
     //array in arrray concet
+const marvel_heros = ["spiderman" , "Ironman" , "thor"]
+const dc_heros = ["superman" , "flash" , "batman"]
+
+// const all_heros=marvel_heros.concat(dc_heros);
+// console.log(all_heros);
+
+//another method 
+
+const allheroes=[...marvel_heros,...dc_heros]   //spread method
+console.log(allheroes);
+
+
+
+
+
+
+
+
+
 const arrInarr = [3,4,8,[5,7,] ,6,1,8,9,[3,8,5,6,[3,1,6,3,]]]
 
 const arrInarr1 = arrInarr.flat(Infinity);     //simplyfy in one array

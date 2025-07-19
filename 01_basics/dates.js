@@ -11,6 +11,7 @@
 // console.log(typeof myDate);  //object
 
 // let mycreatedDate = new Date(2025 ,0 , 21)  //declaring own date
+// let mycreatedDate = new Date("2025-01-14")  //declaring own date  yy-mm-dd
 // console.log(mycreatedDate.toDateString());
 
 
