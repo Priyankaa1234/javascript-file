@@ -56,6 +56,33 @@ const mycoding=[
 
 
 mycoding.forEach( (item) => {
-    console.log(item.langName);
+    //console.log(item.langName);
     
 })
+
+
+
+//for each loop doesn't return the value
+//filter returns value
+
+const num =[1,2,6,4,2,3,5]
+
+//const MyNum= num.filter( (num) => num>4)
+const MyNum= num.filter( (num) => {                      //if we use scope , use return keyword
+    return num>4})
+//console.log(MyNum);
+
+
+
+
+//chaninig
+
+const Num= [1,2,3,4,5,6,7,8,9]
+
+const newNums = Num
+                .map( (item) => item *10)
+                .map( (item) => item +1)
+                .filter( (item)=>item>=40)
+console.log(newNums);
+
+
