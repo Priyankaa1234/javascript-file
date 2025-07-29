@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color: black; color:aquamarine">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+    
+</body>
+<script>
+    function addLanguage(lanName){
+       const li= document.createElement('li')
+       li.innerHTML=`${lanName}`
+       document.querySelector('.language').appendChild(li)
+    }
+
+    addLanguage("python")
+    addLanguage("HTMl")
+    addLanguage("typescript")
+
+
+    //optimize mehtod
+    function addoptionalLang(lanName){
+        const li =document.createElement('li')
+        li.appendChild(document.createTextNode(lanName))
+        
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Golang")
+    addLanguage("React")
+
+
+
+    //edit
+    const secondLang =  document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement('li')
+    newLi.textContent = "mojo"
+    secondLang.replaceWith(newLi)
+
+
+
+    //remove
+    const lastlang = document.querySelector("li:last-child")
+    lastlang.remove()
+</script>
+</html> 
