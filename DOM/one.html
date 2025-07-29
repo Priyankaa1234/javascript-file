@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+    
+</head>
+<body style="background-color:#212121; color:red">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    //parent to child removal
+    const parent =document.querySelector('.parent')
+    // console.log(parent);
+    // console.log(parent.children);
+    // console.log(parent.children[1].innerHTML);
+    
+    for (let i = 0 ; i< parent.children.length ; i++){
+        console.log(parent.children[1].innerHTML);
+    }
+    parent.children[1].style.color="orange"
+    console.log(parent.firstElementChild);
+
+
+
+    //child to parent removal
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);     //jumps to direct parent elemnt
+    console.log(dayOne.nextElementSibling);     //jumps to direct sibling elemnt
+    console.log("NODES" , parent.childNodes); //count each and ervery node in the child
+</script>
+</html>
